@@ -134,8 +134,8 @@ void YamlReader::fill(
         if (object.routes.count(src) != 0)
         {
             throw eprosima::utils::ConfigurationException(
-                        utils::Formatter() <<
-                            "Multiple routes defined for participant " << src  << " : only one allowed.");
+                      utils::Formatter() <<
+                          "Multiple routes defined for participant " << src  << " : only one allowed.");
         }
 
         // Optional route destination(s)
@@ -213,8 +213,8 @@ void YamlReader::fill(
         if (object.topic_routes.count(topic) != 0)
         {
             throw eprosima::utils::ConfigurationException(
-                        utils::Formatter() <<
-                            "Multiple routes defined for topic " << topic  << " : only one allowed.");
+                      utils::Formatter() <<
+                          "Multiple routes defined for topic " << topic  << " : only one allowed.");
         }
 
         // Required route
