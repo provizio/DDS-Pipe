@@ -15,6 +15,7 @@
 
 #pragma once
 
+#include <fastdds/rtps/common/SampleIdentity.h>
 #include <fastdds/rtps/common/SerializedPayload.h>
 #include <fastdds/rtps/common/SequenceNumber.h>
 
@@ -85,6 +86,9 @@ struct RtpsPayloadData : public core::IRoutingData
 
     //! Id of the participant from which the Reader has received the data.
     core::types::ParticipantId participant_receiver{};
+
+    //! Sample Identity of the message
+    fastdds::rtps::SampleIdentity sample_identity{};
 };
 
 /**
