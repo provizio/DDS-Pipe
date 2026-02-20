@@ -22,7 +22,7 @@
 
 #include <fastdds/rtps/common/CdrSerialization.hpp>
 
-#include <ddspipe_core/types/monitoring/topics/v1/MonitoringStatusPubSubTypes.h>
+#include <ddspipe_core/types/monitoring/status/v1/MonitoringStatusPubSubTypes.h>
 #include <ddspipe_core/types/monitoring/status/v1/MonitoringStatusCdrAux.hpp>
 
 using SerializedPayload_t = eprosima::fastrtps::rtps::SerializedPayload_t;
